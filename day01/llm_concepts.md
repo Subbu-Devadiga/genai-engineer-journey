@@ -44,3 +44,77 @@ Application : Is the program that end user interacts with.
 
 
 
+
+
+
+
+What is a token?
+
+Ans : Token is small parts of text, can be a complete word, part of word or punctuations that ai models use to process and generate. Tokens will be assigned with numbers called token ids. Tokenization depends on tokenizer or model.
+
+
+
+What is the difference between a token and an embedding?
+
+Token is used to process the texts. 
+
+Embedding is vector of numbers represents information or meaning of texts. means this will be used search semantically similar meaning words or sentences.
+
+Token are used just to process the texts where in embedding is to locate  similar meaning words or sentences.
+
+
+
+
+
+
+
+What is an embedding?
+
+Embedding is vector of numbers that represents information/meaning of texts where semantically similar meaning sentences are located close together.
+
+
+
+Why are embeddings useful in RAG?
+
+When we want specific information based on query, using key word search might not be that effective because there may be other words that has similar meaning as query. so using of embeddings will help locate semantically similar meaning of words together and produce most effective answer for the query.
+
+
+
+
+
+What is cosine similarity?
+
+It calculates how similar two vectors are using mathematical calculation.
+
+
+
+
+
+Suppose I have:
+
+
+
+Query:
+
+"How can I reset my password?"
+
+
+
+Document A:
+
+"How to change your password"
+
+
+
+Document B:
+
+"How to cook pasta"
+
+
+
+Why would an embedding-based search probably rank Document A higher?
+
+When it goes through cosine similarity mathematical calculation, Since document A is similar it will get higher rank. 
+
+
+
