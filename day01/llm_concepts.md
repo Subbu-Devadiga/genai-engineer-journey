@@ -56,7 +56,7 @@ Ans : Token is small parts of text, can be a complete word, part of word or punc
 
 What is the difference between a token and an embedding?
 
-Token is used to process the texts. 
+Token is used to process the texts.
 
 Embedding is vector of numbers represents information or meaning of texts. means this will be used search semantically similar meaning words or sentences.
 
@@ -114,7 +114,113 @@ Document B:
 
 Why would an embedding-based search probably rank Document A higher?
 
-When it goes through cosine similarity mathematical calculation, Since document A is similar it will get higher rank. 
+When it goes through cosine similarity mathematical calculation, Since document A is similar it will get higher rank.
 
 
+
+
+
+
+
+
+
+9/9
+
+
+
+What is a machine-learning model?
+
+Based on the given set of training data, which discovers relationship or  patterns between data through mathematical calculations and predicts the upcoming data set. It also calculates loss, adjusts it's weights to reduce loss and produce the most probable outcome.
+
+
+
+
+
+
+
+What is a feature?
+
+feature is input variables or attributes of data that models use to predict.
+
+
+
+What is a weight?
+
+Is a parameter that controls relationship between input variable. controls how strongly input influences the prediction.
+
+
+
+
+
+What is a bias?
+
+Bias is a statistical error from model or deviation of predicted output from an actual expected prediction.
+
+
+
+What is loss?
+
+Loss is how wrong the model is. Error is the difference between Actual and predicted output. Loss uses mean squared error function to calculate.
+
+
+
+
+
+Why do we need a loss function?
+
+Loss function is needed to know how good our prediction model is, low loss means good prediction and high loss means bad prediction.
+
+
+
+
+
+What is gradient descent?
+
+Gradient descent tells you in which direction the slope is moving, so the model should adjust current weight in the direction that should reduce the error
+
+
+
+
+
+What does the learning rate control?
+
+learning rate controls how large each update is.
+
+
+
+
+
+Explain the following pipeline:
+
+
+
+Training Data
+
+&#x20;    ↓
+
+Prediction
+
+&#x20;    ↓
+
+Loss
+
+&#x20;    ↓
+
+Gradient
+
+&#x20;    ↓
+
+Weight Update
+
+
+
+Once you feed training data to prediction model, it goes through mathematical calculation finds relationship or patterns between data and predicts a weight and output, then it calculates error and the loss. After that it calculates gradient to find in which direction the slope is going and accordingly model adjusts weight to reduce error and runs prediction model again.
+
+
+
+
+
+What happens when you call model.fit(x, y) in a machine-learning library?
+
+when we call model .fit() we are feeding training data into our model so that our model can learn underlying patterns, relationships or rules. Once this step is complete the model is ready to predict on new data.
 
