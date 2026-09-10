@@ -224,3 +224,129 @@ What happens when you call model.fit(x, y) in a machine-learning library?
 
 when we call model .fit() we are feeding training data into our model so that our model can learn underlying patterns, relationships or rules. Once this step is complete the model is ready to predict on new data.
 
+
+
+
+
+
+
+10/09
+
+
+
+What is a neural network?
+
+Neural network is set of algorithms modeled like or to imitate human brain to help machines identify/understand patterns and relationship, process information and make predictions on new set of data or inputs.
+
+
+
+What is a neuron?
+
+Neuron performs weighted sum of its inputs, adds a bias and usually applies an activation function to produce an output.
+
+
+
+What is a layer?
+
+Layers are organized group of neurons, that process, transform and pass data forward to learn complex patterns and make predictions.
+
+
+
+Why do we use activation functions?
+
+We use activation function to introduce non linearity which allows the model to learn complex data
+
+
+
+What is ReLU?
+
+ReLU is a mathematical function we use which returns positive input directly and returns zero if it is negative input.
+
+
+
+
+
+What is forward propagation?
+
+Forward propagation is input data flows forward through layers to produce a final prediction.
+
+
+
+
+
+What is backpropagation?
+
+Backpropagation is determining which weight contributed to the error and by how much and then calculating gradient in order to minimize loss or prediction error 
+
+
+
+What is a gradient in a neural network?
+
+Gradient is direction of steepest increase in the loss.
+
+
+
+What happens when we update weights?
+
+When we update weight to the model, Input and weights passes through different layers and model then makes a prediction. Then the model calculates gradient and adjusts its weight to minimize the prediction error and loss. 
+
+
+
+Q10 — Important
+
+
+
+Explain this complete process:
+
+
+
+Input
+
+&#x20;↓
+
+Weighted sum
+
+&#x20;↓
+
+Activation
+
+&#x20;↓
+
+Prediction
+
+&#x20;↓
+
+Loss
+
+&#x20;↓
+
+Backpropagation
+
+&#x20;↓
+
+Gradient
+
+&#x20;↓
+
+Weight update
+
+
+
+Once we provide input to our model, the model performs basic calculations and then applies activation function to introduce non linearity. Input passes through multiple layers and model will make prediction. Once the model make prediction loss will be calculated by using difference between prediction and actual value and mean squared error.
+
+Then the backpropagation process starts where the weights contributed to the error and how much will be determined and then gradient will be calculated to determine the direction of the prediction. gradient is direction of steepest increase in the loss and model should move opposite to that. Model updates the weight accordingly to minimize prediction error.
+
+
+
+
+
+Q11 — Interview challenge
+
+
+
+Why can't we simply use a linear function in every layer of a neural network?
+
+Using linear function in every layer of neural network makes entire neural network collapse into a single linear operation. Single linear equation may not capture complex relationships. It destroys the benefits of depth.
+
+
+
