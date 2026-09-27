@@ -276,7 +276,7 @@ Forward propagation is input data flows forward through layers to produce a fina
 
 What is backpropagation?
 
-Backpropagation is determining which weight contributed to the error and by how much and then calculating gradient in order to minimize loss or prediction error 
+Backpropagation is determining which weight contributed to the error and by how much and then calculating gradient in order to minimize loss or prediction error
 
 
 
@@ -288,7 +288,7 @@ Gradient is direction of steepest increase in the loss.
 
 What happens when we update weights?
 
-When we update weight to the model, Input and weights passes through different layers and model then makes a prediction. Then the model calculates gradient and adjusts its weight to minimize the prediction error and loss. 
+When we update weight to the model, Input and weights passes through different layers and model then makes a prediction. Then the model calculates gradient and adjusts its weight to minimize the prediction error and loss.
 
 
 
@@ -349,4 +349,46 @@ Why can't we simply use a linear function in every layer of a neural network?
 Using linear function in every layer of neural network makes entire neural network collapse into a single linear operation. Single linear equation may not capture complex relationships. It destroys the benefits of depth.
 
 
+
+
+
+
+
+
+
+
+
+27/9
+
+
+
+1.Pytorch is a deep learning framework that provides tools for tensors, neural networks, automatic differentiation, training models and GPU computation.
+
+
+
+2.Tensor is a fundamental data structure to store and manipulate data. It is multidimensional array that contains single data type elements. It generalizes scalar, vector and matrix into higher dimensions.
+
+
+
+3.Because tensors add special capabilities that are required for deep learning such as automatic differentiation, GPU acceleration, neural network modules and optimizers. 
+
+
+
+4.It is built in technique that automatically calculates gradients.
+
+5.It is to tell autograd to track all the operations performed on that tensor
+
+6.It performs backpropagation operations and calculates gradients.
+
+7.Update the parameters to achieve better prediction.
+
+8.Clears the old gradients.
+
+9.One complete pass of entire training data set through a model.
+
+10.Loss function measures the model error and optimizer update the parameters to reduce the error.
+
+11.First we pass the input through a model to get the prediction. We calculate loss between prediction and the targets. We clear the previous gradients, call backward to calculate gradients through backpropagation and then the optimizer updates the parameters. This process repeats for multiple epochs.
+
+12.On day e through numpy we did all the steps manually like model prediction, calculating loss between prediction and targets, calculating gradients, back propagation  and updating the parameters etc. But today through pytorch we have different functions for each of the operations and we can call a function to perform those operations automatically such as model() for prediction,loss function for loss calculation,backward for back propagation, optimizer for updating parameters etc.
 
