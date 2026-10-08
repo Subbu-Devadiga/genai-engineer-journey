@@ -25,7 +25,8 @@ for document in documents:
         embeddings=[embedding],
         metadatas=[{
         "category": document["category"],
-        "type": document["type"]
+        "type": document["type"],
+        "source": document["id"]
         }]
     )
 
